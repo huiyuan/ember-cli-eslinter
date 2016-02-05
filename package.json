@@ -1,6 +1,6 @@
 {
-  "name": "ember-cli-eslint",
-  "version": "1.2.1",
+  "name": "ember-cli-eslinter",
+  "version": "0.1.0",
   "description": "Ember-cli eslint support, for checking your application matches your coding standards.",
   "directories": {
     "doc": "doc",
@@ -13,15 +13,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jonathanKingston/ember-cli-eslint.git"
+    "url": "https://github.com/nickiaconis/ember-cli-eslinter.git"
   },
   "engines": {
     "node": ">= 0.10.0"
   },
   "bugs": {
-    "url": "https://github.com/jonathanKingston/ember-cli-eslint/issues"
+    "url": "https://github.com/nickiaconis/ember-cli-eslinter/issues"
   },
-  "homepage": "https://github.com/jonathanKingston/ember-cli-eslint",
+  "homepage": "https://github.com/nickiaconis/ember-cli-eslinter",
   "author": "Jonathan Kingston",
   "license": "MIT",
   "devDependencies": {
@@ -59,7 +59,7 @@
     "defaultBlueprint": "ember-cli-eslint"
   },
   "dependencies": {
-    "broccoli-lint-eslint": "^1.1.1",
+    "broccoli-eslinter": "^0.1.1",
     "js-string-escape": "^1.0.0"
   }
 }

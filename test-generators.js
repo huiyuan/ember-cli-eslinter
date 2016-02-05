@@ -19,24 +19,24 @@ function render(errors) {
 }
 
 // Qunit test generator
-function qunitTestGenerator(relativePath, errors) {
-  var pass = !errors || errors.length === 0;
+function qunitTestGenerator(relativePath, result) {
+  var pass = (result.errorCount === 0);
   return "import { module, test } from 'qunit';\n" +
     "module('ESLint - " + path.dirname(relativePath) + "');\n" +
     "test('" + relativePath + " should pass ESLint', function(assert) {\n" +
     "  assert.expect(1);\n  assert.ok(" + pass + ", '" + relativePath +
-    " should pass ESLint." + jsStringEscape("\n" + render(errors)) + "');\n" +
+    " should pass ESLint." + jsStringEscape("\n" + render(result.messages)) + "');\n" +
     "});\n";
 }
 
 // Mocha test generator
-function mochaTestGenerator(relativePath, errors) {
-  var pass = !errors || errors.length === 0;
+function mochaTestGenerator(relativePath, result) {
+  var pass = (result.errorCount === 0);
   return "import { describe, it } from 'mocha';\n" +
     "import { assert } from 'chai';\n" +
     "describe('ESLint - " + path.dirname(relativePath) + "', function() {\n" +
     "  it('" + relativePath + " should pass ESLint', function() {\n" +
     "    assert.ok(" + pass + ", '" + relativePath + " should pass ESLint." +
-    jsStringEscape("\n" + render(errors)) + "');\n" +
+    jsStringEscape("\n" + render(result.messages)) + "');\n" +
     "  });\n});\n";
 }

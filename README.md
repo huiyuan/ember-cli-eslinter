@@ -1,10 +1,10 @@
-# Ember-cli-eslint [![Build Status](https://travis-ci.org/jonathanKingston/ember-cli-eslint.svg)](https://travis-ci.org/jonathanKingston/ember-cli-eslint) ![Package Status](https://david-dm.org/jonathanKingston/ember-cli-eslint.svg)
+# Ember-cli-eslinter
 
 ESLinting for Ember CLI apps, [ESLint](http://eslint.org/) provides a scriptable mechanism for checking applications against a strict set of rules.
 
 ## Basic setup
 
-* `ember install ember-cli-eslint`
+* `ember install ember-cli-eslinter`
 * This will create a `.eslintrc` file in your project directory setup with the correct parser.
 
 ## ESLint Babel
@@ -19,7 +19,7 @@ Adding the following to your .eslintrc file after installing will solve this iss
 
 ## Installation
 
-* `ember install ember-cli-eslint`
+* `ember install ember-cli-eslinter`
 
 ## Adding a Test Generator
 
